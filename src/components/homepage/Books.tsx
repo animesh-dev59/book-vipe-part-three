@@ -44,7 +44,7 @@ const Books = async () => {
   const booksData = await getBooks();
 
   return (
-    <section className="min-h-screen bg-slate-950 px-4 py-12 text-slate-100 sm:px-6 lg:px-8 container mx-auto my-6 rounded-4xl">
+    <section className="min-h-screen bg-slate-200 px-4 py-12 text-slate-100 sm:px-6 lg:px-8 container mx-auto my-6 rounded-4xl">
       {/* Container */}
       <div className="mx-auto max-w-7xl">
         {/* Header Section */}
