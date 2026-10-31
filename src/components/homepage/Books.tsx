@@ -50,7 +50,7 @@ const Books = async () => {
         {/* Header Section */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 sm:text-5xl">
-            Trending Books Collection
+            Trending Books Collection of Popular
           </h2>
           <p className="mt-3 text-sm text-slate-400 sm:text-base">
             Explore our curated selection of high-rated books across various genres.
@@ -59,7 +59,7 @@ const Books = async () => {
 
         {/* Modern Responsive Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {booksData.map((book: IBook) => (
+          {booksData.splice(0,5).map((book: IBook) => (
             <BookCard key={book.bookId} book={book}/>
           ))}
         </div>
